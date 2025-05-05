@@ -74,7 +74,9 @@ document.addEventListener('DOMContentLoaded', function() {
             }
             
             // If validation passes, redirect to success page
-
+            if (isValid) {
+                window.location.href = 'success.html'; // Redirect to success.html
+            }
         });
         
         // Reset form handler
